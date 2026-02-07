@@ -2918,3 +2918,288 @@ ul {
     padding: var(--spacing-md) var(--spacing-2xl);
     font-size: var(--font-size-lg);
 }
+
+/* ================================
+   PUNKT SKUPU - EXTENDED STYLES
+================================ */
+
+/* Waste Categories Grid */
+.waste-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.waste-category-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.waste-category-card:hover {
+    border-color: var(--color-accent-primary);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(181, 211, 52, 0.1);
+}
+
+.waste-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.waste-category-card h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+}
+
+.waste-category-card p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Conditions Section */
+.conditions-section {
+    padding: var(--spacing-3xl) 0;
+}
+
+/* Additional Requirements */
+.additional-requirements {
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.additional-requirements h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: #ffc107;
+    margin-bottom: var(--spacing-lg);
+}
+
+.requirements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requirements-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.warning-icon {
+    font-size: var(--font-size-lg);
+    flex-shrink: 0;
+}
+
+/* Pricing CTA Box */
+.pricing-cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+    background: linear-gradient(135deg, rgba(181, 211, 52, 0.15) 0%, rgba(156, 39, 176, 0.15) 100%);
+    border: 2px solid var(--color-accent-primary);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    margin-top: var(--spacing-xl);
+}
+
+.pricing-cta-content h3 {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.pricing-cta-content p {
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* Components Section */
+.components-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-bg-secondary);
+}
+
+.components-category {
+    margin-bottom: var(--spacing-2xl);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+}
+
+.category-title {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--color-accent-primary);
+}
+
+/* Components Table */
+.components-table-wrapper {
+    overflow-x: auto;
+}
+
+.components-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-sm);
+}
+
+.components-table th,
+.components-table td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.components-table th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    white-space: nowrap;
+}
+
+.components-table td {
+    color: var(--color-text-secondary);
+}
+
+.components-table tr:hover {
+    background: rgba(181, 211, 52, 0.05);
+}
+
+/* Class Badges */
+.class-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.class-badge.class-a {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+}
+
+.class-badge.class-b {
+    background: rgba(33, 150, 243, 0.2);
+    color: #2196F3;
+}
+
+.class-badge.class-c {
+    background: rgba(156, 39, 176, 0.2);
+    color: #9C27B0;
+}
+
+.class-badge.class-gold {
+    background: rgba(255, 193, 7, 0.2);
+    color: #FFC107;
+}
+
+.class-badge.class-silver {
+    background: rgba(158, 158, 158, 0.2);
+    color: #9E9E9E;
+}
+
+.class-badge.class-plastic {
+    background: rgba(255, 87, 34, 0.2);
+    color: #FF5722;
+}
+
+.class-badge.class-modern {
+    background: rgba(0, 188, 212, 0.2);
+    color: #00BCD4;
+}
+
+.class-badge.class-other {
+    background: rgba(121, 85, 72, 0.2);
+    color: #8D6E63;
+}
+
+/* Components Grid Small */
+.components-grid-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.component-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.component-item:hover {
+    background: rgba(181, 211, 52, 0.1);
+}
+
+.component-icon {
+    font-size: var(--font-size-xl);
+}
+
+.component-note {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: rgba(255, 193, 7, 0.1);
+    border-radius: var(--radius-md);
+    color: #ffc107;
+    font-size: var(--font-size-sm);
+}
+
+/* Responsive - Punkt Skupu Extended */
+@media (max-width: 992px) {
+    .waste-categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-cta-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .waste-categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .components-grid-small {
+        grid-template-columns: 1fr;
+    }
+
+    .components-table {
+        font-size: var(--font-size-xs);
+    }
+
+    .components-table th,
+    .components-table td {
+        padding: var(--spacing-sm);
+    }
+}
