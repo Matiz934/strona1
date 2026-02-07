@@ -3402,6 +3402,19 @@ ul {
     font-size: var(--font-size-sm);
 }
 
+.pricing-table .price-value {
+    color: var(--color-text-primary);
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    white-space: nowrap;
+}
+
+.pricing-table .price-value.highlight {
+    color: var(--color-accent-primary);
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+}
+
 /* Category Rows */
 .pricing-table tr.category-row {
     background: var(--color-bg-tertiary) !important;
